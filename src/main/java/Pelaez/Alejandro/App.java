@@ -8,10 +8,27 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args)
     {
-        System.out.print("What is your name?");
         Scanner input = new Scanner(System.in);
-        String name = input.next();
-        System.out.print("Hello " + name + ", nice to meet you!");
-        System.out.print("\n");
+        System.out.print("What is the order amount? ");
+        float amount = input.nextFloat();
+        System.out.print("What state do you live in? ");
+        String state = input.next();
+
+        float tax = 0;
+        if (state.equalsIgnoreCase("Wisconsin"))
+        {
+            System.out.print("What county do you live in? ");
+            String county = input.next();
+            tax = 5 / amount;
+            if (county.equalsIgnoreCase("Eau Claire"))
+                tax += .5f / amount;
+            if (county.equalsIgnoreCase("Dunn"))
+                tax += .4f / amount;
+        }
+        if (state.equalsIgnoreCase("Illinois"))
+            tax += 8 / amount;
+
+        float total = tax + amount;
+        System.out.printf("The tax is: $%.2f.\nThe total is $%.2f.", tax, total);
     }
 }

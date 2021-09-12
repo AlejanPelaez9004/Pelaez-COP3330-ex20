@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac05dfa9-3477-43c5-83bb-61c5e09eb0fd" name="Changes" comment="Renamed to App">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pelaez/Alejandro/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pelaez/Alejandro/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
